@@ -10,3 +10,11 @@ python3 -m venv env
 pip3 install -r requirements.txt
 ```
 
+## Run
+
+```
+python3
+from image_snatch.converters import toPNG
+toPNG("/path/to.pdf")
+```
+
