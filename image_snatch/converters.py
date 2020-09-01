@@ -34,6 +34,7 @@ def toPNG(pdf_path):
 
 
 def toJPEG(pdf_path):
+    _checkfs(pdf_path=pdf_path)
     doc = fitz.open(pdf_path)
     for i in range(len(doc)):
         for img in doc.getPageImageList(i):
